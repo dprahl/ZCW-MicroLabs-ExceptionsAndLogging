@@ -32,10 +32,10 @@ public final class PhoneNumberFactory {
      * @return an instance of PhoneNumber with randomly generated phone number value
      */ //TODO - Implement logic
     private static PhoneNumber createRandomPhoneNumber() {
-        int aC = RandomNumberFactory.createInteger(200, 999);
-        int cOC = RandomNumberFactory.createInteger(200, 999);
-        int pLC = RandomNumberFactory.createInteger(0, 9999);
-        return createPhoneNumberSafely(aC, cOC, pLC);
+        int areaCode = RandomNumberFactory.createInteger(200, 999);
+        int centralOfficeCode = RandomNumberFactory.createInteger(200, 999);
+        int phoneLineCode = RandomNumberFactory.createInteger(0, 9999);
+        return createPhoneNumberSafely(areaCode, centralOfficeCode, phoneLineCode);
     }
 
 
